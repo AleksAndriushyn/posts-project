@@ -13,16 +13,16 @@ function App() {
 		<div className='App'>
 			<Header user={user} />
 			<Routes>
-				<Route path='/alter-ego-task' element={<Main />} />
-				<Route path='alter-ego-task/news' element={<News />} />
-				<Route
-					path='alter-ego-task/profile'
-					element={<Profile user={user} />}
-				/>
+				<Route path='/' element={<Main />} />
+				<Route path='/news' element={<News />} />
+				<Route path='/profile' element={<Profile user={user} />} />
 			</Routes>
 		</div>
 	);
 }
 
 export default App;
+
+
+
 

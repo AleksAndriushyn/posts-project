@@ -49,7 +49,7 @@ const LoginForm = ({
 
 		dispatch(setUser(data as User));
 		onClose();
-		navigate('alter-ego-task/profile');
+		navigate('/profile');
 	};
 
 	useEffect(() => {

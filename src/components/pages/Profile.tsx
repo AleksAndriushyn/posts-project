@@ -10,7 +10,7 @@ const Profile = ({ user }: { user: User | null }) => {
 
 	useEffect(() => {
 		if (!user) {
-			navigate('/alter-ego-task');
+			navigate('/');
 		}
 	}, [navigate, user]);
 

@@ -8,9 +8,9 @@ const Navbar = ({ user }: { user: User | null }) => {
 	const { t } = useTranslation();
 
 	const menus = [
-		{ name: t('Main'), link: 'alter-ego-task/' },
-		{ name: t('News'), link: 'alter-ego-task/news' },
-		{ name: t('Profile'), link: 'alter-ego-task/profile' },
+		{ name: t('Main'), link: '/' },
+		{ name: t('News'), link: '/news' },
+		{ name: t('Profile'), link: '/profile' },
 	];
 
 	return (
