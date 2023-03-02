@@ -1,0 +1,58 @@
+@use "./common.scss" as common;
+
+$cursor: pointer;
+$width: 400px;
+
+.icon:hover {
+    cursor: pointer;
+    background: red;
+    border-radius: 4px;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+.icon.spin {
+    animation: spin 1s linear infinite;
+    width: 48px;
+    height: 48px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.news-content {
+    @include common.flex-options(center, column);
+
+    .MuiList-root {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+
+        .MuiListItem-root {
+            @include common.flex-options(center, column);
+
+            .content {
+                @include common.flex-options();
+                b {
+                    font-size: 20px;
+                    width: $width;
+                    cursor: $cursor;
+                    @include common.text-options();
+                }
+            }
+            .MuiListItemText-root {
+                width: $width;
+                p {
+                    @include common.text-options();
+                    cursor: $cursor;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}

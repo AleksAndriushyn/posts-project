@@ -1,0 +1,21 @@
+@use "./common.scss" as common;
+
+.header {
+    background-color: #212529;
+    width: 100%;
+
+    .username {
+        @include common.flex-options(flex-end);
+        color: white;
+        gap: 10px;
+
+        button {
+            color: white;
+        }
+        button:hover {
+            color: black;
+            transition: 0.3s ease all;
+            background-color: red;
+        }
+    }
+}

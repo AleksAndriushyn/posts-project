@@ -1,0 +1,12 @@
+@mixin flex-options($justify-content: center, $lex-direction: row, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    flex-direction: $lex-direction;
+    align-items: $align-items;
+}
+
+@mixin text-options() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
